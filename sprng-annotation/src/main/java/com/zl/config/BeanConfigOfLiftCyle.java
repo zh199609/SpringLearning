@@ -31,8 +31,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanConfigOfLiftCyle {
 
-//    @Bean(initMethod = "init", destroyMethod = "detory")
-    @Bean(initMethod = "init", destroyMethod = "detory")
+    //    @Bean(initMethod = "init", destroyMethod = "detory")
+    @Bean
     public Car car() {
         return new Car();
     }

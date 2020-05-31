@@ -14,10 +14,10 @@ public class Car {
     }
 
     public void init() {
-        System.out.println("初始化");
+        System.out.println("Car初始化");
     }
 
     public void detory() {
-        System.out.println("销毁");
+        System.out.println("Car销毁");
     }
 }
