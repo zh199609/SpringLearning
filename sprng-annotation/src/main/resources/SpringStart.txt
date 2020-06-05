@@ -16,7 +16,7 @@ Spring容器的refresh()[创建刷新]
     5）：添加BeanPostProcessor【ApplicationListenerDetector】
     6）：添加编译时的Aspectj支持
     7）：给BeanFactory中注册一下能用的组件getEnvironment()
-4.postProcessBeanFactory(beanFactory);BeanFactory准备工作完成后进行的后置处理工作
+4.beanFactoryPostProcessors(beanFactory);BeanFactory准备工作完成后进行的后置处理工作
     1）：子类通过重写这个方法来在BeanFactory创建并与准备完成之后做进一步的设置
 =====================以上是BeanFactory的创建与准备工作==============================
 5.invokeBeanFactoryPostProcessors(beanFactory);执行BeanFactoryPostProcessors
@@ -79,3 +79,7 @@ Spring容器的refresh()[创建刷新]
                     所有Bean都利用getBean创建完成后
                         执行Bean的SmartInitializingSingleton.afterSingletonsInstantiated
                 8.finishRefresh();
+
+
+                singletonObjects
+                aliasMap
